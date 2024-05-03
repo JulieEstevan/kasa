@@ -7,7 +7,7 @@ function Header() {
             <img src={logo} alt="Kasa" className="logo"/>
             <nav>
                 <Link to="/">Accueil</Link>
-                <Link uo="/A-Propos">A Propos</Link>
+                <Link to="/A-Propos">A Propos</Link>
             </nav>
         </header>
     )
