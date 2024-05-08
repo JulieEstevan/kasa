@@ -1,0 +1,48 @@
+.housing-container {
+    margin: 0 100px;
+}
+.housing {
+    display: flex;
+    justify-content: space-between;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        h1 {
+        color: #FF6060;
+        font-size:  36px;
+        font-weight: 500;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-tag {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            p {
+                text-align: center;
+                padding: 5px;
+                width: 15%;
+                color: white;
+                background-color: #FF6060;
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.housing-description {
+    display: flex;
+    gap: 76px;
+    margin: 25px 0 50px 0;
+    h2 {
+        font-size: 18px;
+    }
+    li {
+        list-style: none;
+    }
+}

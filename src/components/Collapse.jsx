@@ -3,7 +3,7 @@ import { useState } from 'react'
 function Collapse({title, description}) {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div>
+        <div className="collapse-container">
             <div className="collapse">
                 <h2>{title}</h2>
                 <button onClick={() => setIsOpen(!isOpen)}>
@@ -12,7 +12,8 @@ function Collapse({title, description}) {
             </div>
             {isOpen && <p className="collapse-description">
                 {description}
-            </p>}
+            </p>
+            }
         </div>
     )
 }

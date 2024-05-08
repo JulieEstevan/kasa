@@ -76,6 +76,42 @@
   z-index: 2;
 }
 
+.slideshow-container {
+  padding: 0 0 24px 0;
+}
+
+.slideshow {
+  position: relative;
+  color: white;
+}
+.slideshow_img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.slideshow_arrow, .slideshow_paging {
+  all: unset;
+  position: absolute;
+}
+.slideshow .left {
+  left: 2%;
+  top: 50%;
+  transform: translate(-2%, -50%);
+}
+.slideshow .rigth {
+  left: 98%;
+  top: 50%;
+  transform: translate(-98%, -50%);
+}
+.slideshow_paging {
+  left: 50%;
+  top: 92%;
+  transform: translate(-50%, -92%);
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .collapse {
   display: flex;
   flex-direction: row;
@@ -100,6 +136,36 @@
   font-size: 17px;
 }
 
+.collapse-container {
+  width: 100%;
+}
+
+.host {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.host_img {
+  border-radius: 100%;
+  width: 64px;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.stars_filled {
+  color: #FF6060;
+}
+.stars_empty {
+  color: #E3E3E3;
+}
+
 .cards-container {
   display: grid;
   grid-template: "a a a" "b b b";
@@ -109,6 +175,57 @@
   padding: 50px;
   background-color: rgb(250, 250, 250);
   border-radius: 25px;
+}
+
+.housing-container {
+  margin: 0 100px;
+}
+
+.housing {
+  display: flex;
+  justify-content: space-between;
+}
+.housing_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.housing_info h1 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.housing_info h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.housing_info-tag {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.housing_info-tag p {
+  text-align: center;
+  padding: 5px;
+  width: 15%;
+  color: white;
+  background-color: #FF6060;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.housing-description {
+  display: flex;
+  gap: 76px;
+  margin: 25px 0 50px 0;
+}
+.housing-description h2 {
+  font-size: 18px;
+}
+.housing-description li {
+  list-style: none;
 }
 
 .about-categories {
