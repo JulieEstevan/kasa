@@ -10,9 +10,9 @@ function Collapse({title, description}) {
                 {isOpen ? <i className="fa-solid fa-chevron-down fa-xl"></i> : <i className="fa-solid fa-chevron-up fa-xl"></i> }    
                 </button>
             </div>
-            {isOpen && <p className="collapse-description">
+            {isOpen && (<p className={isOpen ? "collapse-description down" : ""}>
                 {description}
-            </p>
+            </p>)
             }
         </div>
     )

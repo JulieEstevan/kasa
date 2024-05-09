@@ -4,15 +4,42 @@
     justify-content: space-between;
     align-items: center;
     padding: 45px 7%;
+    @media (max-width: 640px) {
+            padding: 7%
+    }
     nav {
         display: flex;
         flex-direction: row;
         gap: 60px;
+        @media (max-width: 375px) {
+            gap: 20px;
+        }
+        @media (max-width: 480px) {
+            gap: 40px;
+        }
     }
     a {
         text-decoration: none;
         color: black;
         font-weight: 500;
         font-size: 24px;
+        @media (max-width: 640px) {
+            font-size: 18px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+        @media (max-width: 375px) {
+            font-size: 12px;
+        }
+    }
+    a.active {
+        text-decoration: underline;
+    }
+    .logo {
+        @media (max-width: 640px) {
+            width: 145px;
+        }
     }
 }
+

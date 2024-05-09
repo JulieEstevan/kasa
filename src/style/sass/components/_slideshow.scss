@@ -9,10 +9,19 @@
         height: 415px;
         object-fit: cover;
         border-radius: 25px;
+        @media (max-width: 640px) {
+            height: 255px;
+        }
     }
     &_arrow, &_paging {
         all: unset;
         position: absolute;
+        img {
+            @media (max-width: 640px) {
+            width: 15px;
+        }
+        }
+        
     }
     .left {
         left: 2%;
@@ -30,5 +39,8 @@
         transform: translate(-50%, -92%);
         font-size: 18px;
         font-weight: 500;
+        @media (max-width: 640px) {
+            font-size: 12px;
+        }
     }
 }

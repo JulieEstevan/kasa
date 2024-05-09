@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import arrowLeft from '../assets/ArrowLeft.png'
+import arrowRight from '../assets/ArrowRigth.png'
 
 function Slideshow({pictures}) {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,12 +16,12 @@ function Slideshow({pictures}) {
             {pictures.pictures.length > 1 && (
                 <div className="slideshow">
                     <button onClick={prevSlide} className="slideshow_arrow left">
-                        <i className="fa-solid fa-chevron-left fa-5x"></i>
+                        <img src={arrowLeft} alt="fleche gauche"/>
                     </button>
-                    <img src={pictures.pictures[currentSlide]} alt="logement" className="slideshow_img"/>
+                    <img src={pictures.pictures[currentSlide]} alt="logement" className={"slideshow_img"}/>
                     <div className="slideshow_paging">{paging}</div>
                     <button onClick={nextSlide} className="slideshow_arrow rigth">
-                        <i className="fa-solid fa-chevron-right fa-5x"></i>
+                        <img src={arrowRight} alt="fleche droite"/>
                     </button>
                 </div>
             )}

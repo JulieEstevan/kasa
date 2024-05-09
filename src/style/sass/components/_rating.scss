@@ -2,10 +2,20 @@
     display: flex;
     gap: 10px;
     margin-top: 30px;
+    @media (max-width: 640px) {
+        width: fit-content;
+        gap: 5px;
+    }
     &_filled {
         color: #FF6060;
+        @media (max-width: 640px) {
+            font-size: 14px;
+        }
     }
     &_empty {
         color: #E3E3E3;
+        @media (max-width: 640px) {
+            font-size: 14px;
+        }
     }
 }
