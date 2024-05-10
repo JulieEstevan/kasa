@@ -9,14 +9,15 @@
     }
     to {
         transform: translateY(0em);
+        opacity: 1;
     }
 }
-
-@keyframes fade {
+  
+@keyframes rotationInverted {
     from {
-        opacity: 0;
+      transform: rotate(180deg);
     }
     to {
-        opacity: 1;
+      transform: rotate(0deg);
     }
 }

@@ -7,12 +7,14 @@ function Collapse({title, description}) {
             <div className="collapse">
                 <h2>{title}</h2>
                 <button onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <i className="fa-solid fa-chevron-down fa-xl"></i> : <i className="fa-solid fa-chevron-up fa-xl"></i> }    
+                {isOpen ? <i className="fa-solid fa-chevron-down fa-xl up"></i> : <i className="fa-solid fa-chevron-down fa-xl down"></i> }    
                 </button>
             </div>
-            {isOpen && (<p className={isOpen ? "collapse-description down" : ""}>
+            {isOpen ? <p className="collapse-description collapse-description_down">
                 {description}
-            </p>)
+            </p> : <p className="collapse-description collapse-description_up">
+            {description}
+            </p>
             }
         </div>
     )

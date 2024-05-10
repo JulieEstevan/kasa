@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import logements from "../logements.json"
 import Error from "./Error"
-import Slideshow from "../components/Slideshow"
+import Gallery from "../components/Gallery"
 import Host from "../components/Host"
 import Collapse from "../components/Collapse"
 import Rating from "../components/Rating"
@@ -15,7 +15,7 @@ function Housing () {
         currentHousing.map((logement) => (
             
             <div key={logement.id} className="housing-container">
-                <Slideshow pictures={logement}/>
+                <Gallery pictures={logement}/>
                 <div className="housing">
                     <div  className="housing_info">
                         <h1>{logement.title}</h1>
@@ -28,7 +28,7 @@ function Housing () {
                     </div>
                     <div className="housing_host">
                             <Host user={logement}/>
-                            <Rating rate={logement.rating} />
+                            <Rating key={logement.rating} rate={logement.rating} />
                     </div>
                 </div>
                 <div className="housing-description">

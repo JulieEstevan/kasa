@@ -1,9 +1,7 @@
 .about-categories {
     display: grid;
-    gap: 30px;
     margin: 45px 14%;
     @media (max-width: 640px) {
-        gap: 20px;
         margin: 7% 14%;
     }
 }

@@ -7,8 +7,8 @@ function Rating ({rate}) {
         let stars = Array(filledStars).fill().map((_, i) => (
             <i className="fa-solid fa-star fa-lg stars_filled" key={i}></i>
         ))
-        stars = stars.concat(Array(emptyStars).fill().map((i) => (
-            <i className="fa-solid fa-star fa-lg stars_empty" key={i + filledStars}></i>
+        stars = stars.concat(Array(emptyStars).fill().map((_,i) => (
+            <i className="fa-solid fa-star fa-lg stars_empty" key={i + rate}></i>
         )))
         return stars
     }
